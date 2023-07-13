@@ -23,7 +23,7 @@ print (preco / 2)
 print (preco // 2)   # Uso das '//' pega resultado apenas inteiro da divisão
 
 
-# NUMERICO PARA INT
+# NUMERICO PARA STR
 #------------------
 preco = 10.50
 idade = 28
