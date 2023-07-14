@@ -17,7 +17,7 @@ frutas = []     # declaração de uma Lista vazia em uma variável
 frutas = ['laranja','maca','uva', 'pera']       # Lista declarada na variável com objetos
 
 # >> utilizando método list
-letras = list['Python']        # CADA LETRA da palavra é um ITEM da Lista !!
+letras = list['PYTHON']        # CADA LETRA da palavra é um ITEM da Lista !!
 numeros = list(range(10))       # Cria uma variável com um lista numérica de 0-9
 
 # >> declarando com tipos de objetos diferentes
