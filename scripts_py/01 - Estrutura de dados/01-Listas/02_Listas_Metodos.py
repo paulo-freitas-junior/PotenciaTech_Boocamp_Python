@@ -123,6 +123,6 @@ print(f'Quantidade de elementos da lista: ', len(linguagens))
 # [].sorted() - função built-in do Python
 
 linguagens = ['python','js','c','java','csharp','js']
-print(f'Lista sortida por tamanho opção 1: ', sorted(linguagens))  
-print(f'Lista sortida por tamanho opção 2: ', sorted(linguagens, key=lambda x: len(x)))
-print(f'Lista sortida por tamanho reverso: ', sorted(linguagens, key=lambda x: len(x), reverse=True))
+print(f'Lista sortida por tamanho opção 1: ', sorted(linguagens))  # ordenado por ordem alfabética ou numérica
+print(f'Lista sortida por tamanho opção 2: ', sorted(linguagens, key=lambda x: len(x))) # ordenado pela quant. de elementos
+print(f'Lista sortida por tamanho reverso: ', sorted(linguagens, key=lambda x: len(x), reverse=True)) # odenado pela quant. elementos inverso
