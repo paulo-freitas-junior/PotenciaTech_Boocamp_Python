@@ -25,12 +25,12 @@ carro =['Ferrari','F8', 42000000, 2020, 2900, 'São Paulo', True]
 
 # VISUALIZANDO
 
-print(frutas[0])    # maçã
+print(frutas[0])    # laranja
 print(frutas[2])    # uva
 
 ''' Sequências suportam indexação negativa. A contagem começa em -1 '''
 print(frutas[-1])   # pera
-print(frutas[-3])   # laranja
+print(frutas[-3])   # maca
 
 
 '''
@@ -58,7 +58,7 @@ print(matriz[-2][-2])  # 3         >>
 FATIAMENTO DE LISTAS
 
 Extrair o conjunto de valores de uma sequência, acessando o índice inicial e/ou final
-para acessar o conjunto, podendo inclusive informar quantas posições o cursos deve
+para acessar o conjunto, podendo inclusive informar quantas posições o cursor deve
 "pular" o acesso.
 
 Lista = [start:stop:step]
@@ -70,6 +70,7 @@ print(lista[:2])        # ['p','y']
 print(lista[1:3])       # ['y,'t']
 print(lista[0:3:2])     # ['p','t']
 print(lista[::])        # ['p','t','h','o','n']
+print(lista[::3])       # ['p','h]
 print(lista[::-1])      # ['n','o',h',t','y','p']
 
 '''
@@ -139,7 +140,7 @@ OPÇÃO 2 - Syntax:
 =================
 
 lista_dados = [1,30,21,2,9,65,34]
-lista_recebe = [variável for variável in lista_dados if variável 'CONDIÇÃO']
+lista_recebe = [variável_recebe_condicao for variável in lista_dados if variável 'CONDIÇÃO']
 '''
 
 numeros = [1,30,21,2,9,65,34]
