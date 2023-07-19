@@ -2,7 +2,7 @@
 MÉTODOS DOS DICIONARIOS (DICT)
 '''
 
-# LIMPAR O DICIONÁRIO
+# LIMPAR O DICIONÁRIO - Limpa TODOS os objetos do dicionário
 # {}.clear()
 
 contatos = {
