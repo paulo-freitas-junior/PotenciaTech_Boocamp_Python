@@ -36,7 +36,7 @@ dict.fromkeys(['nome', 'telefone'])     # CRIANDO CHAVES SEM VALOR - {'nome': No
 dict.fromkeys(['nome', 'telefone'], 'vazio')    # CRIANDO CHAVES COM VALOR PADRÃO - {'nome': 'vazio', 'telefone': 'vazio'}
 
 
-# Acessar VALORES dentro do dicionário
+# Acessar VALORES dentro do dicionário - atraves das CHAVES
 # {}.get()
 
 contatos = {
@@ -72,7 +72,8 @@ print(contatos.keys())
 # {}.pop()
 
 contatos = {
-    'zemane@gmail.com': {'nome': 'Ze mane das Coves', 'telefone-': '4444-3333'}
+    'zemane@gmail.com': {'nome': 'Ze mane das Coves', 'telefone-': '4444-3333'},
+    'zezinho@gmail.com': {'nome': 'Zezinho', 'telefone': '2222-1111'},
 }
 
 resultado = contatos.pop('zemane@gmail.com')    # remove a chave definida e mostra o resultado da remoção
@@ -82,16 +83,17 @@ resultado = contatos.pop('zemane@gmail.com', {'Chave informada não encontrada'}
 print(resultado)
 
 
-# Remove 
+# Remove a PRIMEIRA chave de um dicionário
 # {}.popitem()
 
 contatos = {
-    'zemane@gmail.com': {'nome': 'Ze mane das Coves', 'telefone-': '4444-3333'}
+    'zemane@gmail.com': {'nome': 'Ze mane das Coves', 'telefone-': '4444-3333'},
+    'zezinho@gmail.com': {'nome': 'Zezinho', 'telefone': '2222-1111'},
 }
 
 resultado = contatos.popitem()
 print(resultado)                # mostra resultado removido      
-# print(contatos.popitem())       # gera um KeyError devido item ter sido removido no comando acima
+# print(contatos.popitem())       # gera um KeyError devido item ter sido removido no comando acima CASO não exista nenhuma chave mais
 
 
 # Adiciona um conjunto CHAVE/VALOR no dicionário com um valor sendo default definido
@@ -114,10 +116,10 @@ contatos = {'zemane@gmail.com': {'nome': 'Zezão', 'telefone': '3333-1111'}
 }
 
 # >> alterando 
-contatos.update({'zemane@gmail.com': {'nome': 'Zezinho'}})  # Altera o nome para Zezinho na chave definida 'zemane@gmail.com'
+contatos.update({'zemane@gmail.com': {'nome': 'Zezinho'}})  # ALTERA o nome para Zezinho na chave definida 'zemane@gmail.com'
 
 # >> criando novo dicionario
-contatos.update({'zezao@gmail.com': {'nome': 'Zezao', 'telefone': '1234-5678'}}) # Update no dicionário add novos registros
+contatos.update({'zezao@gmail.com': {'nome': 'Zezao', 'telefone': '1234-5678'}}) # Update no dicionário ADD NOVOS registros
 print(contatos)
 
 
@@ -164,5 +166,5 @@ contatos = {
     'fulana1@gmail.com': {'nome': 'Fulaninha', 'telefone': '1111-0000'},
 }
 
-del contatos['zemane@gmail.com']['telefone']        # remove apenas a chave de telefone no dicionario definido
-del contatos['fulana1@gmail.com']                   # remove todos objetos do dicionário definido pela chave
+del contatos['zemane@gmail.com']['telefone']        # remove APENAS a chave/valor de telefone no dicionario definido
+del contatos['fulana1@gmail.com']                   # remove TODOS objetos do dicionário definido pela chave
